@@ -1,0 +1,63 @@
+/************* TOOLS *************/
+
+.debug {
+    border: 3px purple dashed;
+}
+
+
+/************* GENERAL LAYOUT *************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/************* NAV-BAR *************/
+
+.navigation-container {
+    height:50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgrey;
+}
+
+.navigation-menu {
+    display: flex;
+    align-items: center;
+}
+.navigation-center {
+    display: flex;
+    align-items: center;
+}
+.navigation-icons {
+    display: flex;
+    align-items: center;   
+}
+
+/************* LOGIN-PAGE *************/
+
+/*** LOGIN ***/
+.login-container {
+    display: flex;
+    height: 528px;
+    width: 100%;
+    background-image: url("../img/background/background_shell.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: row;
+}
+
+.login-existing {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.login-new {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/************* MAIN-PAGE *************/

@@ -34,6 +34,30 @@
     align-items: center;   
 }
 
+/************ FILTER ******************/
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: grey;
+    height: 50px;
+}
+
+.filter-left {
+    display: flex;
+    align-items: center;
+}
+
+.filter-center {
+    display: flex;
+    align-items: center;
+}
+
+.filter-right {
+    display: flex;    
+    align-items: center;    
+}
+
 /************* MAIN-PAGE *************/
 
 /*** Hero-Image ***/
@@ -60,5 +84,59 @@ justify-content: center;
     justify-content: center;
     margin-top:20px;
 }
+/************* FILTER *************/
 
-/************* MAIN-PAGE *************/
+/************* Dropdown *************/
+
+.filter-dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.filter-dropdown a:hover {background-color: grey;}
+
+.button-category {
+    background-color:transparent;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;}
+  
+.show {
+    display: block;}
+
+/************* PRODUCTS *************/
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: lightskyblue;
+    align-items: center;
+}
+
+.product-row1 {
+    display: flex;
+    width: 75%;
+  
+}
