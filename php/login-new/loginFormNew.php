@@ -1,9 +1,9 @@
 <?php
     
 // moet overeenkomen met HTML, hier stel je de variabelen vast
-        $email = $_GET["customers_email"];    
-        $firstname = $_GET["customers_firstname"];
-        $customers_password = $_GET["customers_password"]; // different name otherwise this name crashes with the same name in db-connection
+        $email = $_POST["customers_email"];    
+        $firstname = $_POST["customers_firstname"];
+        $customers_password = $_POST["customers_password"]; // different name otherwise this name crashes with the same name in db-connection
      
     include "db_connection.php";
     
@@ -14,7 +14,8 @@
         
         // use exec() because no results are returned
         $conn->exec($sql);
-        echo "Uw nieuwe account is aangemaakt";
+        echo "Uw nieuwe account is aangemaakt <br/>";
+        echo "Welkom " . $firstname;
         }
 
 //?? snap ik niet, vragen Thomas

@@ -34,12 +34,16 @@
     align-items: center;   
 }
 
-/************ FILTER ******************/
+/************* Dropdown *************/
+
+
+
+/************ FILTER LAYOUT ******************/
 .filter-container {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background-color: grey;
+    background-color: lightgrey;
     height: 50px;
 }
 
@@ -91,6 +95,7 @@ justify-content: center;
 .filter-dropdown {
 position: relative;
 display: inline-block;
+margin-right: 200px;
 }
 
 .dropdown-content {

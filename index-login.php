@@ -10,16 +10,18 @@
 </head>
 <body> 
     <div class="navigation-container">
-        <div class="navigation-menu">Here comes the navigation-menu</div>
-        <div class="navigation-center">Empty space in the middle</div>
+        <div class="navigation-menu"></div>
+        <div class="navigation-center"></div>
         <div class="navigation-icons" >
-            <a href="index.php">Home</a>icons login searchbar shopping basket
+            <a href="index.php">Home</a>  
         </div>
     </div>
 
-<div class="login-container">          
+
+<div class="login-container">   
+<!---
     <div class="login-existing">
-        <form action="php/login-existing/loginFormHandler.php" method="POST">
+        <form action="php/login-existing/loginFormExisting.php" method="POST">
             <h1></h1>
             <legend>Inlog-scherm<br>&nbsp<br><br></legend>
             <label for="mail"></label>
@@ -31,20 +33,19 @@
             <button type="submit">Inloggen</button>
         </form>    
     </div>
-    
+---->
     <div class="login-new">
-        <form action="formHandler.php" method="GET">
-            <h1></h1>
-            <legend></legend>
+        <form action="php/login-new/loginFormNew.php" method="POST">
+            <h1>Thank you for creating a new Account</h1>
             <label for="name"></label>
-            <input type="text" id="name" name="customers_firstname" autofocus placeholder="Uw voornaam">
+            <input type="text" id="name" name="customers_firstname" autofocus placeholder="Your Firstname">
             <label for="mail"></label>
-            <input type="email" id="mail" name="customers_email" placeholder="Uw e-mail wordt uw Login">
+            <input type="email" id="mail" name="customers_email" placeholder="Your E-mail">
             <label for="password"></label>
-            <input type="password" id="password" name="customers_password" placeholder="Uw wachtwoord">
+            <input type="password" id="password" name="customers_password" placeholder="Choose a Password">
             <br>
             <br>
-            <button type="submit">Nieuw account</button>    
+            <button type="submit">Create Account</button>    
         </form>
     </div>
 </div>
