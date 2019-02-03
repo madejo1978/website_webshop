@@ -15,7 +15,6 @@
 /************* NAV-BAR *************/
 
 .navigation-container {
-    height:50px;
     display: flex;
     justify-content: space-between;
     background-color: lightgrey;
@@ -34,8 +33,32 @@
     align-items: center;   
 }
 
-/************* Dropdown *************/
 
+/************* LOGIN-PAGE *************/
+
+/*** LOGIN ***/
+.login-container {
+    display: flex;
+    height: 528px;
+    width: 100%;
+    background-image: url("../img/background/background_shell.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: row;
+}
+
+.login-existing {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.login-new {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 /************ FILTER LAYOUT ******************/
@@ -136,12 +159,12 @@ margin-right: 200px;
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: lightskyblue;
+    background-color: lightgrey;
     align-items: center;
 }
 
 .product-row1 {
     display: flex;
     width: 75%;
-  
+    mix-blend-mode: multiply;
 }

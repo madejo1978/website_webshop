@@ -9,7 +9,7 @@
     foreach ($db_result as $row)
     {            
         echo '<div class="product-row1">' .
-             '<a href="?bags_id=' . $row['bags_id'] . '">' .
+             '<a href="index-bag-details.php?bags_id=' . $row['bags_id'] . '">' .     
              '<img src="' . $row['bags_pic'] . '" alt="' . ' ' . ' " style="width:100%">' .
              '</div>';  
     } 

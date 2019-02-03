@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/styles-index.css" />    
-    <link rel="stylesheet" type="text/css" media="screen" href="css/styles-login.css" />    
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles-index.css" />        
 </head>
 <body> 
-    <div class="navigation-container">
-        <div class="navigation-menu">here comes the navigation-menu</div>
+    
+<div class="navigation-container">
+        <div class="navigation-menu"></div>
         <div class="navigation-center"> 
         <div class="filter-container">
         <div class="filter-right">
         </div>
     </div>
+</div>
 
-        </div>
         <div class="navigation-icons" >
             <div class="filter-dropdown">
             <button id="button-signin" class="button-dropdown">Sign in</button>  
@@ -51,7 +51,7 @@
     </div>
 
     <div class="filter-container">
-        <div class="filter-left">MEN'S BAGS | name of the bag type</div>
+        <div class="filter-left">MEN'S BAGS | </div>
         <div class="filter-center"></div>
         <div class="filter-right">
             <div class="filter-dropdown">

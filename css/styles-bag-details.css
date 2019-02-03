@@ -1,0 +1,58 @@
+/************* TOOLS *************/
+
+.debug {
+    border: 3px purple dashed;
+}
+
+
+/************* GENERAL LAYOUT *************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: lightgrey;
+}
+
+/************* NAV-BAR *************/
+
+.navigation-container {
+    height:50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgrey;
+}
+
+.navigation-menu {
+    display: flex;
+    align-items: center;
+}
+.navigation-center {
+    display: flex;
+    align-items: center;
+}
+.navigation-icons {
+    display: flex;
+    align-items: center;   
+}
+
+/************* PRODUCT-DETAILS *************/
+
+
+.product-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+        
+}
+
+.bag-picture {
+    display: flex;
+    mix-blend-mode: multiply;
+}
+
+.bag-details {
+    display: flex;
+    display: inline;
+    justify-content: center;
+    text-align: center;
+}
