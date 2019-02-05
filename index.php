@@ -50,6 +50,10 @@
         <button>SHOW me the BAGS</button></div>
     </div>
 
+    <form>
+         <button type="submit" formaction="php/product-row2.php">Click me</button>
+    </form>
+
     <div class="filter-container">
         <div class="filter-left">MEN'S BAGS | </div>
         <div class="filter-center"></div>
@@ -57,11 +61,11 @@
             <div class="filter-dropdown">
             <button id="button-category">category</button>  
                 <div id="category-dropdown" class="dropdown-content">
-                    <a href="#bags_totes">Totes</a>
-                    <a href="#bags_messenger">Messenger Bags</a>
-                    <a href="#bags_duffle">Duffle Bags</a>
-                    <a href="#bags_back">Back Bags</a>
-                    <a href="#bags_belt">Belt Bags</a>
+                    <a input onclick="php/product/row2.php">Back Bags</a>
+                    <a href="#">Belt Bags</a>
+                    <a href="#">Duffle Bags</a>
+                    <a href="#">Messenger Bags</a>
+                    <a href="#">Totes</a>
                 </div>  
             </div>
         </div>
@@ -71,26 +75,37 @@
         <div class="product-row1">
             <?php include "php/product-row1.php"; ?>
         </div>
+        <div class="product-row2">
+            <?php include "php/product-row2.php"; ?>
+        </div>
+        <div class="product-row3">
+            <?php include "php/product-row3.php"; ?>
+        </div>
+        <div class="product-row4">
+            <?php include "php/product-row4.php"; ?>
+        </div>
+        <div class="product-row5">
+            <?php include "php/product-row5.php"; ?>
+        </div>
     </div>
 
     
 <script>
-// if I click on the button I want to see a dropdown list 
-button_signin = document.getElementById("button-signin").onclick = function() {myFunction1()};
+// Dropdown login 
+button_signin = document.getElementById("button-signin").
+onclick = function() {myFunction1()};
 
 function myFunction1() {
-  document.getElementById("signin-dropdown").classList.toggle("show");
+document.getElementById("signin-dropdown").classList.toggle("show");
 }
 
-// if I click on a item of the dropdown list I want to select an category
-
-button_category = document.getElementById("button-category").onclick = function() {myFunction2()};
+// Dropdown filter bags
+button_category = document.getElementById("button-category").
+onclick = function() {myFunction2()};
 
 function myFunction2() {
-  document.getElementById("category-dropdown").classList.toggle("show");
+document.getElementById("category-dropdown").classList.toggle("show");
 }
-
-// This category of products has to show the pictures in my "product-container" 
 
 </script>
 

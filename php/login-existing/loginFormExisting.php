@@ -14,6 +14,7 @@
 
     $db_result = $db_connection->query($database_query);
 
+// rowcount is used here to check if the e/mail already exists, if not is will show the customers firstname
     if ($db_result->rowCount() != 0){
         foreach($db_result as $row){
             $firstname = $row['customers_firstname'];

@@ -163,8 +163,12 @@ margin-right: 200px;
     align-items: center;
 }
 
-.product-row1 {
+.product-row1,
+.product-row2,
+.product-row3,
+.product-row4,
+.product-row5 
+{
     display: flex;
-    width: 75%;
     mix-blend-mode: multiply;
 }
