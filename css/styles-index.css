@@ -20,10 +20,17 @@
     background-color: lightgrey;
 }
 
-.navigation-menu {
+.navigation-left {
     display: flex;
     align-items: center;
 }
+
+.navigation-logged-in {
+    display: flex;
+    height: 20px;
+    width: 30px;
+}
+
 .navigation-center {
     display: flex;
     align-items: center;
@@ -161,6 +168,13 @@ margin-right: 200px;
     width: 100%;
     background-color: lightgrey;
     align-items: center;
+}
+
+#product-row-1 {
+    display: flex;
+    flex-wrap: wrap;
+    mix-blend-mode: multiply;
+    justify-content: center;
 }
 
 .product-row1,

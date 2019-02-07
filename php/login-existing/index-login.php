@@ -10,7 +10,6 @@
     <form action="loginFormHandler.php" method="POST">
 
         <h1>Bestaande Klanten</h1>
-
         <legend>Inlog-scherm<br>&nbsp<br></legend>
         <label for="mail">E-mail adres:</label>
         <input type="email" id="mail" name="customers_email" autofocus placeholder="Gebruik uw e-mail adres om in te loggen">

@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include "db_connect.php";
 
 // the second column is delivered from the HTML. The PHP receives it and puts them in variables (first column)
@@ -14,22 +15,28 @@
 
     $db_result = $db_connection->query($database_query);
 
-// rowcount is used here to check if the e/mail already exists, if not is will show the customers firstname
+// rowcount is used here to check if the email already exists, if not is will show the customers firstname
     if ($db_result->rowCount() != 0){
         foreach($db_result as $row){
-            $firstname = $row['customers_firstname'];
-        }
-        
-        echo "welkom " . $firstname;
+           $firstname = $row['customers_firstname'];
+    }    
+// Set session variables
+    $_SESSION["login-user"] = $firstname;
+    $_SESSION["login-wrong-message"] = "Uw e-mail adres of wachtwoord is niet bij ons bekend";
+
+    header("location: ../../index.php");
     }
     else 
-    {
-        echo 'Uw e-mail adres of wachtwoord is niet bij ons bekend';
-        // header("location:login.php?et=1;");
-    
+    { 
+        function display_message(){
+            if(isset($_SESSION["login-user"]))
+            echo $_SESSION["login-wrong-message"];
+            unset($_SESSION["login-wrong-message"]);
+        }
+
+      echo 'Uw e-mail adres of wachtwoord is niet bij ons bekend';
+
+    // echo "welkom " . $firstname;
     // header verwijst naar hij moet inloggen
-    // header("Location: index.html");
-    }
-
-
+}
 ?>
