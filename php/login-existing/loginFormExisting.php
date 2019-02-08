@@ -19,7 +19,8 @@
     if ($db_result->rowCount() != 0){
         foreach($db_result as $row){
            $firstname = $row['customers_firstname'];
-    }    
+    }   
+    
 // Set session variables
     $_SESSION["login-user"] = $firstname;
     $_SESSION["login-wrong-message"] = "Uw e-mail adres of wachtwoord is niet bij ons bekend";

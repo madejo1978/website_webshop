@@ -20,18 +20,21 @@
         
         // Name
         '<div class="bag-details">' .
-            '<h2>' . 'Free Shipping and Returns' . '<h2>' . '<br>' . 
+            '<a href="cart/checkout.php?bags_id=' . $row['bags_id'] . '">' . 
             '<h1>' . $row['bags_name'] . '<h1>' . '<br>' .
         // Price
             '<h1>' . '€ ' . $row['bags_price'] . '<h1>' . '<hr>' .
         // Type
             '<h2>' . $row['bags_code'] . '<h2>' . '<br>' .
-            '<h2>' . 'AVAILABLE' . '<br>' . 'Your selection is available for shipment. Delivery estimated in 1-2 business days.' . '<br>' . '<h2>' . '<br>' .
-            
-            '<input type="button" class="button-shopping" value="ADD TO SHOPPING BAG" >' .
-             
         '</div>' ;
     }       
+
+
+// '<a href="cart/cart.php?bags_id=' . $row['bags_id'] . '">' .
+    // '<a href="index-bag-details.php?bags_id=' . $row['bags_id'] . '">' .
+    // <a href="../resources/cart.php?add={$row['product_id']}" class="btn btn-primary">Buy Now!</a> 
+    // <a href="item.php?id={$row['product_id']}" class="btn btn-default">More Info</a>    
+
 
     $conn = null;
 ?>

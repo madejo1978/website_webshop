@@ -8,13 +8,12 @@
 
     foreach ($db_result as $row)
     {            
-        echo '<div class="product-row1">' .
+        echo // '<div class="product-row1">' .
              '<a href="index-bag-details.php?bags_id=' . $row['bags_id'] . '">' .     
              '<img src="' . $row['bags_pic'] . '" alt="' . ' ' . ' 
              "style="width:40vh" . "style="margin: auto auto">' .
              '</div>';  
-             
-       
+
             } 
 
     $conn = null;

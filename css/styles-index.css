@@ -12,6 +12,7 @@
     box-sizing: border-box;
 }
 
+
 /************* NAV-BAR *************/
 
 .navigation-container {
@@ -27,8 +28,8 @@
 
 .navigation-logged-in {
     display: flex;
-    height: 20px;
-    width: 30px;
+    display: inline-block;
+    font-size: 20px;
 }
 
 .navigation-center {
@@ -37,9 +38,35 @@
 }
 .navigation-icons {
     display: flex;
-    align-items: center;   
+    align-items: center;  
+    background-color: lightgrey; 
 }
 
+/* ---------------- BUTTONS ----------------*/
+
+.button {
+    background-color: gray;  
+    border: 1px solid white;
+    color: white;
+    padding: 12px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+  }
+
+  #get-pics-all {
+    background-color: black;  
+    border: 1px solid white;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 200px;
+  }
 
 /************* LOGIN-PAGE *************/
 
@@ -175,6 +202,7 @@ margin-right: 200px;
     flex-wrap: wrap;
     mix-blend-mode: multiply;
     justify-content: center;
+    width: 70%;
 }
 
 .product-row1,
