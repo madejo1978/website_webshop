@@ -10,15 +10,10 @@
 // conform values table
     try {  
         $sql = "INSERT INTO customers (customers_email, customers_firstname,customers_password)
-        VALUES (:email, :firstname, :customers_password)"; // placeholders
+        VALUES ('$email', '$firstname', '$customers_password')";
         
-        $stmt = $conn->prepare($sql);                                  // create variable statement & run function prepare()
-        $stmt->bindParam(':email', $email);                            // function bindParam() 3x:1 placeholder / 2 variabel-data
-        $stmt->bindParam(':firstname', $firstname);                     
-        $stmt->bindParam(':customers_password', $customers_password);    
-
-        $stmt->execute();                                    // function execute()
-        
+        // use exec() because no results are returned
+        $conn->exec($sql);
         echo "Uw nieuwe account is aangemaakt <br/>";
         echo "Welkom " . $firstname;
         }
