@@ -45,7 +45,7 @@
 /* ---------------- BUTTONS ----------------*/
 
 .button {
-    background-color: gray;  
+    background-color: black;  
     border: 1px solid white;
     color: white;
     padding: 12px 15px;
@@ -58,7 +58,7 @@
 
   #get-pics-all {
     background-color: black;  
-    border: 1px solid white;
+    border: 1px solid black;
     color: white;
     padding: 10px 10px;
     text-align: center;
